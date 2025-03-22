@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-n^+c!j7n@i@o^$)a&p3lnr9p^(-)c@ek9l#t_523_fiylov!if
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+STATIC_URL = '/static/'
+STATIC_ROOT = 'static'  # Render lo relative path work avtundi
+ALLOWED_HOSTS = ['djfakelogo.onrender.com', '127.0.0.1', '*']  # Render URL add cheyyi
 
 
 # Application definition
@@ -117,7 +119,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')
 
